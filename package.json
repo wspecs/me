@@ -9,7 +9,6 @@
     "build:minify": "./node_modules/.bin/html-minifier --input-dir dist --output-dir dist --remove-comments --collapse-whitespace --minify-js --minify-css",
     "build:add-timestamp": "NOW=$(echo $(date +\"%s\")); sed -i \"\" \"s/NOW_TIMESTAMP/$NOW/g\" dist/**",
     "build:prod": "npm run build:copy-src && npm run build:run-build-script && npm run build:minify && npm run build:add-timestamp",
-    "docker": "npm run build:prod && cp -r dist docker",
     "start:prod": "./node_modules/.bin/http-server dist",
     "start": "./node_modules/.bin/http-server src"
   },
