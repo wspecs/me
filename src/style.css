@@ -3,11 +3,33 @@
 *::after {
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  padding: 4px;
+
 }
+
+a:hover {
+  box-shadow: 0px 0px 4px 4px #535353;
+}
+
+.menu {
+  margin-top: 16px;
+}
+
+.menu a {
+  font-size: 14px;
+  padding: 2px 8px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  box-shadow: 0px 0px 4px 4px #535353;
+}
+
 button {
   background-color: transparent;
   color: inherit;
@@ -15,14 +37,17 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
 figure {
   margin: 0;
 }
+
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
   margin: 0;
 }
+
 ul,
 ol,
 dd {
@@ -30,6 +55,7 @@ dd {
   padding: 0;
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -40,12 +66,15 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
 p {
   margin: 0;
 }
+
 cite {
   font-style: normal;
 }
+
 fieldset {
   border-width: 0;
   padding: 0;
@@ -53,8 +82,10 @@ fieldset {
 }
 
 html {
-  font-size: 100%; /*for using REM units*/
+  font-size: 100%;
+  /*for using REM units*/
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -63,12 +94,10 @@ body {
   line-height: 1.3;
   color: #000;
 
-  background: linear-gradient(
-    129.09deg,
-    #f2f4f5 0%,
-    #e2e9f0 11.51%,
-    #f5f5f5 84.71%
-  );
+  background: linear-gradient(129.09deg,
+      #f2f4f5 0%,
+      #e2e9f0 11.51%,
+      #f5f5f5 84.71%);
 }
 
 .full-container {
@@ -126,11 +155,9 @@ svg {
 @media (prefers-color-scheme: dark) {
   body {
     filter: invert(1);
-    background: linear-gradient(
-      129.09deg,
-      #0c0b0a 0%,
-      #1c160f 11.51%,
-      #0a0a0a 84.71%
-    );
+    background: linear-gradient(129.09deg,
+        #0c0b0a 0%,
+        #1c160f 11.51%,
+        #0a0a0a 84.71%);
   }
 }

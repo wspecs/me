@@ -18,7 +18,7 @@
         <h1>Wendly Saintil</h1>
         <h2>Software Developer</h2>
         <p class="short-bio">
-          The number of the years of my pilgrimage is 29. I am looking for a a
+          The number of the days of my pilgrimage is <span class="days">29</span>. I am looking for a a
           city with enduring foundations. A city whose builder and maker is God.
           I desire a better country, a heavenly country.
         </p>
@@ -37,8 +37,8 @@
           </a>
 
           <a
-            href="https://www.linkedin.com/in/wendly-saintil-92ab31a7"
-            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/wendly-s-92ab31a7"
+            rel="noopener"
             target="_blank"
             title="Connect on LinkedIn"
           >
@@ -74,7 +74,15 @@
             </svg>
           </a>
         </div>
+        <div class="menu">
+          <a href="https://medium.com/2022-devotional" rel="noopener noreferrer" target="_blank" title="Link to Daily Devotional">Devotional</a>
+          <a href="https://numbrail.com" rel="noopener noreferrer" target="_blank" title="Link to Numbrail Game">Numbrail</a>
+        </div>
       </div>
     </div>
+    <script>
+      const span = document.querySelector('span.days');
+      span.innerHTML = Math.ceil(((Date.now() / 1000) - 749894400) / (60 * 60 * 24))
+    </script>
   </body>
 </html>
